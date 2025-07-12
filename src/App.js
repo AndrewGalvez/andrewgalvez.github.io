@@ -69,7 +69,7 @@ function FeedbackPanel({runSendFeedback}) {
 function App() {
   const [games_data, setGamesData] = useState([]);
   useEffect(() => {
-    fetch('/games.json')
+    fetch(process.env.PUBLIC_URL + '/games.json')
       .then(res => res.json())
       .then(data => setGamesData(data))
   }, []);
