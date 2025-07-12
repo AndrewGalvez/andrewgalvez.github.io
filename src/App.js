@@ -4,19 +4,19 @@ function GameBox({ gamedata }) {
   return (
     <div className= "game-box">
       <div className = "game-box-img">
-	<img src={gamedata.imgpath}/>
+	<img src={process.env.PUBLIC_URL + gamedata.imgpath}/>
 
     </div>
       <div className = "game-box-desc">
     <p>
 	  { gamedata.name }
     </p>
-	  <a target="_blank" href={gamedata.githubpath} ><button disabled={
+	  <a target="_blank" href={process.env.PUBLIC_URL + gamedata.githubpath} ><button disabled={
 	    gamedata.githubpath === "none"
 	  }>Source Code</button></a>
-	  <a download href={gamedata.downloadlinux}><button disabled={
+	  <a download href={process.env.PUBLIC_URL + gamedata.downloadlinux}><button disabled={
 	    gamedata.downloadlinux === "none"}>Download for Linux</button></a>
-	  <a download href={gamedata.downloadwindows}><button disabled={
+	  <a download href={process.env.PUBLIC_URL + gamedata.downloadwindows}><button disabled={
 	    gamedata.downloadwindows === "none"}>Download for Windows</button></a>
     </div>
     </div>
