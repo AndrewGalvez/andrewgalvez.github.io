@@ -1,0 +1,23 @@
+[
+  { 
+    "name": "Crab",
+    "imgpath": "/images/crab.png",
+    "githubpath": "none",
+    "downloadlinux": "/downloads/crab-linux.zip",
+    "downloadwindows": "/downloads/crab-windows.zip"
+  },
+  {
+    "name": "Dodgeball",
+    "imgpath": "/images/dodgeball.png",
+    "githubpath": "none",
+    "downloadlinux": "/downloads/dodgeball-linux.zip",
+    "downloadwindows": "/downloads/dodgeball-windows.zip"
+  },
+  {
+    "name": "Hippo",
+    "imgpath": "/images/hippo.png",
+    "githubpath": "none",
+    "downloadlinux": "/downloads/hippo-linux.zip",
+    "downloadwindows": "/downloads/hippo-windows.zip"
+  }
+]
