@@ -11,7 +11,7 @@ function GameBox({ gamedata }) {
     <p>
 	  { gamedata.name }
     </p>
-	  <a target="_blank" href={process.env.PUBLIC_URL + gamedata.githubpath} ><button disabled={
+	  <a target="_blank" href={gamedata.githubpath} ><button disabled={
 	    gamedata.githubpath === "none"
 	  }>Source Code</button></a>
 	  <a download href={process.env.PUBLIC_URL + gamedata.downloadlinux}><button disabled={
