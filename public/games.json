@@ -21,7 +21,7 @@
     "downloadwindows": "/downloads/hippo-windows.zip"
   },
   {
-    "name": "Crab (2)",
+    "name": "Crab (2) -- In development",
     "imgpath": "/images/crab.png",
     "githubpath": "https://github.com/andrewgalvez/crab",
     "downloadlinux": "none",
