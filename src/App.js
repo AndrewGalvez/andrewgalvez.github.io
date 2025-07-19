@@ -77,7 +77,6 @@ function App() {
   const [isFeedbackDisplayed, setIsFeedbackDisplayed] = useState(false);
 
   function sendFeedback(text) {
-    console.log(text);
     window.location.href = "mailto:dogisamoose.amazon@gmail.com?subject=Feedback&body="+text;
   };
 
