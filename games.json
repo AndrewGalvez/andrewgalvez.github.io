@@ -4,27 +4,31 @@
     "imgpath": "/images/crab.png",
     "githubpath": "none",
     "downloadlinux": "/downloads/crab-linux.zip",
-    "downloadwindows": "/downloads/crab-windows.zip"
+    "downloadwindows": "/downloads/crab-windows.zip",
+    "dev": false
   },
   {
     "name": "Dodgeball",
     "imgpath": "/images/dodgeball.png",
     "githubpath": "none",
     "downloadlinux": "/downloads/dodgeball-linux.zip",
-    "downloadwindows": "/downloads/dodgeball-windows.zip"
+    "downloadwindows": "/downloads/dodgeball-windows.zip",
+    "dev": false
   },
   {
     "name": "Hippo",
     "imgpath": "/images/hippo.png",
     "githubpath": "none",
     "downloadlinux": "/downloads/hippo-linux.zip",
-    "downloadwindows": "/downloads/hippo-windows.zip"
+    "downloadwindows": "/downloads/hippo-windows.zip",
+    "dev": false
   },
   {
-    "name": "Crab (2) -- In development",
+    "name": "Crab (2)",
     "imgpath": "/images/crab.png",
     "githubpath": "https://github.com/andrewgalvez/crab",
     "downloadlinux": "none",
-    "downloadwindows": "none"
+    "downloadwindows": "none",
+    "dev": true 
   }
 ]
