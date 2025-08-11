@@ -2,15 +2,18 @@ import { useState, useEffect } from 'react';
 
 function GameBox({ gamedata }) {
   return (
-    <div className= "game-box">
+    <div className= "game-box" >
       <div className = "game-box-img">
 	<img src={process.env.PUBLIC_URL + gamedata.imgpath}/>
 
     </div>
       <div className = "game-box-desc">
     <p>
-	  { gamedata.name }
+	  { gamedata.name}
     </p>
+    {gamedata.dev && <p className= "game-box-desc-dev">
+      In Development
+    </p>}
 	  <a target="_blank" href={gamedata.githubpath} ><button disabled={
 	    gamedata.githubpath === "none"
 	  }>Source Code</button></a>

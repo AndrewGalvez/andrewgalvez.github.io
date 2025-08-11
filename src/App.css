@@ -29,7 +29,7 @@ html {
 }
 
 .game-boxes-wrapper {
-  transform: translateX(-100%);
+  transition: transform 3s;
   animation: slideInFromLeft 3s ease-in-out forwards;
   position: relative;
   display: block;
@@ -81,6 +81,11 @@ html {
   font-size: 32px;
   color:#31748f;
   margin: 0px;
+}
+
+.game-box-desc > .game-box-desc-dev {
+  font-size: 24px;
+  color: red;
 }
 
 .header {
