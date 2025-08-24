@@ -27,8 +27,16 @@
     "name": "Crab (2)",
     "imgpath": "/images/crab.png",
     "githubpath": "https://github.com/andrewgalvez/crab",
-    "downloadlinux": "none",
+    "downloadlinux": "/downloads/crab2-linux.zip",
     "downloadwindows": "none",
-    "dev": true 
+    "dev": false
+  },
+  {
+    "name": "Watermelon Clicker",
+    "imgpath": "/images/watermelon.png",
+    "githubpath": "https://github.com/andrewgalvez/watermelon",
+    "downloadlinux": "/downloads/watermelon-linux.zip",
+    "downloadwindows": "/downloads/watermelon-windows.zip",
+    "dev": false
   }
 ]
