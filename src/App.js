@@ -9,9 +9,9 @@ function GameBoxImage({ gamedata }) {
   );
 }
 
-function GameBoxDescButton({path, desc}) {
+function GameBoxDescButton({path, desc, d}) {
   return (
-	  <a target="_blank" href={path} ><button disabled={
+	  <a   {...(d && { download: true })} target="_blank" href={path} ><button disabled={
 	    path === "none"
 	  }>{desc}</button></a>
   );
@@ -27,8 +27,8 @@ function GameBoxDesc({ gamedata }) {
       In Development
     </p>}
 	  <GameBoxDescButton path={gamedata.githubpath} desc={"Source Code"}/>
-	  <GameBoxDescButton path={gamedata.downloadlinux} desc={"Download for Linux"}/>
-	  <GameBoxDescButton path={gamedata.downloadwindows} desc={"Download For Windows"}/>
+	  <GameBoxDescButton d={true} path={gamedata.downloadlinux} desc={"Download for Linux"}/>
+	  <GameBoxDescButton d={true} path={gamedata.downloadwindows} desc={"Download For Windows"}/>
     </div>
   );
 }
