@@ -56,13 +56,15 @@ function SidebarSearchPrompt({searchTerm}) {
 function SidebarItemList({games_data}) {
   return (
     <ul>
-      {games_data.map((game, i) => <li key={i}><a href="#{game.name}">{game.name}</a></li>)}
-      </ul>
+      {games_data.map((game, i) => <li key={i}><a href={`#${game.name}`}>{game.name}</a></li>)}
+    </ul>
   );
 }
 
 function Sidebar({data}) {
- return (<div className="sidebar"><p><b>Search</b></p> <SidebarSearchPrompt/> <SidebarItemList games_data={data}/> </div>);
+ return (<div className="sidebar">
+   {/* <p><b>Search</b></p> <SidebarSearchPrompt/>  */}
+   <SidebarItemList games_data={data}/> </div>);
 }
 
 function Header({setFeedback}) {
