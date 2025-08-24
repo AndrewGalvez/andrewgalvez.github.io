@@ -1,12 +1,24 @@
 import { useState, useEffect } from 'react';
 
-function GameBox({ gamedata }) {
+function GameBoxImage({ gamedata }) {
   return (
-    <div className= "game-box" >
       <div className = "game-box-img">
 	<img src={process.env.PUBLIC_URL + gamedata.imgpath}/>
 
     </div>
+  );
+}
+
+function GameBoxDescButton({path, desc}) {
+  return (
+	  <a target="_blank" href={path} ><button disabled={
+	    path === "none"
+	  }>{desc}</button></a>
+  );
+}
+
+function GameBoxDesc({ gamedata }) {
+  return (
       <div className = "game-box-desc">
     <p>
 	  { gamedata.name}
@@ -14,24 +26,44 @@ function GameBox({ gamedata }) {
     {gamedata.dev && <p className= "game-box-desc-dev">
       In Development
     </p>}
-	  <a target="_blank" href={gamedata.githubpath} ><button disabled={
-	    gamedata.githubpath === "none"
-	  }>Source Code</button></a>
-	  <a download href={process.env.PUBLIC_URL + gamedata.downloadlinux}><button disabled={
-	    gamedata.downloadlinux === "none"}>Download for Linux</button></a>
-	  <a download href={process.env.PUBLIC_URL + gamedata.downloadwindows}><button disabled={
-	    gamedata.downloadwindows === "none"}>Download for Windows</button></a>
+	  <GameBoxDescButton path={gamedata.githubpath} desc={"Source Code"}/>
+	  <GameBoxDescButton path={gamedata.downloadlinux} desc={"Download for Linux"}/>
+	  <GameBoxDescButton path={gamedata.downloadwindows} desc={"Download For Windows"}/>
     </div>
+  );
+}
+
+function GameBox({ gamedata }) {
+  return (
+    <div className= "game-box" id={gamedata.name} >
+      <GameBoxImage gamedata={gamedata}/>
+      <GameBoxDesc gamedata ={gamedata}/>
     </div>
   );
 };
 
 function GameBoxesWrapper({games_data}) {
   return (
-    <ul className="game-boxes-wrapper">
-      {games_data.map((game, i) => <li key={i}><GameBox gamedata={game}/></li>)}
-    </ul>);
+    <div className="game-boxes-wrapper">
+      {games_data.map((game, i) => <GameBox gamedata={game}/>)}
+    </div>);
 };
+
+function SidebarSearchPrompt({searchTerm}) {
+  return (<input placeholder="Find a game..." value={searchTerm}/>);
+}
+
+function SidebarItemList({games_data}) {
+  return (
+    <ul>
+      {games_data.map((game, i) => <li key={i}><a href="#{game.name}">{game.name}</a></li>)}
+      </ul>
+  );
+}
+
+function Sidebar({data}) {
+ return (<div className="sidebar"><p><b>Search</b></p> <SidebarSearchPrompt/> <SidebarItemList games_data={data}/> </div>);
+}
 
 function Header({setFeedback}) {
   return (
@@ -86,7 +118,10 @@ function App() {
   return (<>
     <Header setFeedback={()=>{setIsFeedbackDisplayed(!isFeedbackDisplayed);}}/>
     {isFeedbackDisplayed && <FeedbackPanel runSendFeedback={sendFeedback}/>}
+    <div className="mainwrapper">
+    <Sidebar data={games_data}/>
     <GameBoxesWrapper className="game-boxes-wrapper" games_data={games_data}/>
+    </div>
     </>);
 }
 

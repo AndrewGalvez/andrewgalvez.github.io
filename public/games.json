@@ -30,5 +30,13 @@
     "downloadlinux": "none",
     "downloadwindows": "none",
     "dev": true 
+  },
+  {
+    "name": "Watermelon Clicker",
+    "imgpath": "/images/watermelon.png",
+    "githubpath": "https://github.com/andrewgalvez/watermelon",
+    "downloadlinux": "/downloads/watermelon-linux.zip",
+    "downloadwindows": "/downloads/watermelon-windows.zip",
+    "dev": false
   }
 ]
