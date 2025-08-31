@@ -23,17 +23,53 @@ html {
 } 
 
 
-@keyframes slideInFromLeft {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
+@keyframes slideInFromTop {
+  0% { transform: translateY(-200%); }
+  100% { transform: translateY(20%); }
 }
+
+@keyframes slideInFromTopFinish1 {
+  from { transform: translateY(20%); }
+  to { transform: translateY(-10%); }
+}
+
+@keyframes slideInFromTopFinish2 {
+  from { transform: translateY(-10%); }
+  to { transform: translateY(0%); }
+}
+@keyframes slideInFromRight {
+  from { transform: translateX(100vw); }
+  to { transform: translateX(0vw); }
+}
+
 
 .game-boxes-wrapper {
   transition: transform 3s;
-  animation: slideInFromLeft 3s ease-in-out forwards;
   position: relative;
   justify-content: center;
   text-align: center;
+}
+
+.game-boxes-wrapper:not(.featured-games *) {
+  transform: translateY(100vh);
+  animation: slideInFromRight 3s ease-in-out forwards 2s;
+}
+
+.featured-games {
+  margin: 20px;
+  background-color: #31748f;
+  border-radius: 10%;
+  border: 10px solid #f6c177;
+  animation: slideInFromTop 3s ease-in-out forwards ,slideInFromTopFinish1 1s ease-in-out forwards 3s, slideInFromTopFinish2 1s ease-in-out forwards 4s;
+}
+
+.fg-header {
+  font-size: 48px;
+  text-align: center;
+  color: #e0def4;
+  background-color: #21202e;
+  border-radius: 200px;
+  width: 70%;
 }
 
 .game-box {

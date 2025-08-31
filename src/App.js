@@ -103,6 +103,17 @@ function FeedbackPanel({runSendFeedback}) {
   );
 }
 
+function FeaturedGames({gamesdata}) {
+  return (<div className="featured-games">
+    <center>
+    <h1 className="fg-header">Featured Games</h1>
+    </center>
+    <GameBoxesWrapper 
+    games_data = {gamesdata.slice(gamesdata.length - 2, gamesdata.length)}
+    />
+    </div>);
+}
+
 function App() {
   const [games_data, setGamesData] = useState([]);
   useEffect(() => {
@@ -122,7 +133,10 @@ function App() {
     {isFeedbackDisplayed && <FeedbackPanel runSendFeedback={sendFeedback}/>}
     <div className="mainwrapper">
     <Sidebar data={games_data}/>
+    <div className="gameswrapper">
+    <FeaturedGames gamesdata={games_data}/>
     <GameBoxesWrapper className="game-boxes-wrapper" games_data={games_data}/>
+    </div>
     </div>
     </>);
 }
