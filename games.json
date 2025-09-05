@@ -24,6 +24,14 @@
     "dev": false
   },
   {
+    "name": "Watermelon Clicker",
+    "imgpath": "/images/watermelon.png",
+    "githubpath": "https://github.com/andrewgalvez/watermelon",
+    "downloadlinux": "/downloads/watermelon-linux.zip",
+    "downloadwindows": "/downloads/watermelon-windows.zip",
+    "dev": false
+  },
+  {
     "name": "Crab (2)",
     "imgpath": "/images/crab.png",
     "githubpath": "https://github.com/andrewgalvez/crab",
@@ -32,11 +40,11 @@
     "dev": false
   },
   {
-    "name": "Watermelon Clicker",
-    "imgpath": "/images/watermelon.png",
-    "githubpath": "https://github.com/andrewgalvez/watermelon",
-    "downloadlinux": "/downloads/watermelon-linux.zip",
-    "downloadwindows": "/downloads/watermelon-windows.zip",
+    "name": "Space Race",
+    "imgpath": "/images/moodeng.png",
+    "githubpath": "https://github.com/andrewgalvez/spacerace",
+    "downloadlinux": "/downloads/spacerace-linux.zip",
+    "downloadwindows": "none",
     "dev": false
   }
 ]
