@@ -1,7 +1,6 @@
 {
   "name": "website-react",
   "version": "0.1.0",
-  "homepage": "https://andrewgalvez.github.io/website",
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
