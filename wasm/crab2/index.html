@@ -461,6 +461,14 @@
         }
       };
       
+      // Function to navigate to home page - exposed to WebAssembly
+      function go_to_home() {
+        window.location.href = '/';
+      }
+      
+      // Make the function available to WebAssembly
+      Module['go_to_home'] = go_to_home;
+      
       Module.setStatus('Downloading...');
       
       window.onerror = (event) => {
