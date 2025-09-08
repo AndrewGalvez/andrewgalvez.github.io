@@ -1,7 +1,6 @@
 html {
   background-color: #191724;
 }
-
 #header {
   justify-content: center;
   display: flex;
@@ -12,7 +11,6 @@ html {
   margin: auto;
   margin-top: 15px;
 }
-
 #feedback-p-wrapper {
   background-color: white;
   margin: auto;
@@ -21,18 +19,14 @@ html {
   border: 5px solid black;
   margin-top: 10px;
 } 
-
-
 @keyframes slideInFromTop {
   0% { transform: translateY(-200%); }
   100% { transform: translateY(20%); }
 }
-
 @keyframes slideInFromTopFinish1 {
   from { transform: translateY(20%); }
   to { transform: translateY(-10%); }
 }
-
 @keyframes slideInFromTopFinish2 {
   from { transform: translateY(-10%); }
   to { transform: translateY(0%); }
@@ -41,20 +35,19 @@ html {
   from { transform: translateX(100vw); }
   to { transform: translateX(0vw); }
 }
-
-
 .game-boxes-wrapper {
   transition: transform 3s;
   position: relative;
   justify-content: center;
   text-align: center;
-}
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; }
 
 .game-boxes-wrapper:not(.featured-games *) {
   transform: translateY(100vh);
   animation: slideInFromRight 3s ease-in-out forwards 2s;
 }
-
 .featured-games {
   margin: 20px;
   background-color: #31748f;
@@ -62,7 +55,6 @@ html {
   border: 10px solid #f6c177;
   animation: slideInFromTop 3s ease-in-out forwards ,slideInFromTopFinish1 1s ease-in-out forwards 3s, slideInFromTopFinish2 1s ease-in-out forwards 4s;
 }
-
 .fg-header {
   font-size: 48px;
   text-align: center;
@@ -71,7 +63,6 @@ html {
   border-radius: 200px;
   width: 70%;
 }
-
 .game-box {
   min-width: 30%;
   padding: 10px;
@@ -81,12 +72,11 @@ html {
   transition: transform 1s ease, background-color 1s ease;
   font-size: 24px;
   margin: 5px;
-  margin: 5px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-start; 
 }
-
 .game-box-img { 
   overflow: hidden;
   border: 5px solid #f6c177;
@@ -95,28 +85,27 @@ html {
   height: 100px;
   border-radius: 50%;
   transition: border-radius 0.4s ease;
-  display: inline-block;
+  align-self: center;
 }
-
 .game-box-img:hover {
   border-radius: 0%;
 }
-
 .game-box-img > img {
   scale: 0.8;
 }
-
 .game-box-desc {
-  margin-top: 10px;
+  margin-top: auto;
   margin-left: 2%;
   display: flex;
   flex-direction: column;
 }
-
 .game-box-desc > p {
   font-size: 32px;
   color:#31748f;
   margin: 0px;
+}
+.game-box-desc > a > button {
+  width: 100%;
 }
 
 .game-box-desc > .game-box-desc-dev {
@@ -127,38 +116,31 @@ html {
   border-radius: 100%;
   align-items: center;
 }
-
 .mainwrapper {
   display: flex;
 }
-
 .sidebar {
   background-color: #21202e;
   border: 5px solid black;
   width: 20%;
   text-align: center;
 }
-
 .sidebar > p {
   font-size: 48px;
 }
-
 .sidebar > input {
   width: 90%;
   text-align: center;
   font-size: 24px;
 }
-
 .sidebar > ul {
   font-size: 24px;
 }
-
 .header {
   display: flex;
   margin-bottom: 20px;
   margin-top: 15px;
 }
-
 .title-text {
   width: 70%;
   justify-contents: center;
@@ -168,22 +150,18 @@ html {
   font-size: 18px;
   border-radius: 25px;
 }
-
 .title-text > h1 {
   margin: auto;
 }
-
 .feedback-button {
   width: 100%; 
   height: 10%;
 }
-
 #feedback-button {
   width: 30%;
   padding: 5px;
   font-size: 16px;
 }
-
 .feedback-panel {
   display:flex;
   padding: 10px;
@@ -193,13 +171,11 @@ html {
   border-radius: 20px;
   border: 2px solid #9ccfd8;
 }
-
 .feedback-panel-main {
   display: flex;
   flex-direction: column;
   width: 75%;
 }
-
 .feedback-panel-main > textarea {
   border: 2px solid black;
   width: 80%;
@@ -211,23 +187,19 @@ html {
   padding: 5px;
   color: #f6c177;
 }
-
 .feedback-panel-main > button {
   width: 25%;
   font-size: 24px;
 }
-
 .feedback-panel-right {
   width: 25%;
   font-size: 24px;
   padding: 0px;
   color: #908caa;
 }
-
 .feedback-panel-right > ul {
   margin: 0;
 }
-
 .feedback-panel-right > h3 {
   margin: 0px;
 }

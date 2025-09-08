@@ -29,6 +29,7 @@ function GameBoxDesc({ gamedata }) {
 	  <GameBoxDescButton path={gamedata.githubpath} desc={"Source Code"}/>
 	  <GameBoxDescButton d={true} path={gamedata.downloadlinux} desc={"Download for Linux"}/>
 	  <GameBoxDescButton d={true} path={gamedata.downloadwindows} desc={"Download For Windows"}/>
+	  <GameBoxDescButton d={false} path={gamedata.wasm} desc={"Play In Browser"}/>
     </div>
   );
 }

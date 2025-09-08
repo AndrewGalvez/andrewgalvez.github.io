@@ -5,7 +5,8 @@
     "githubpath": "none",
     "downloadlinux": "/downloads/crab-linux.zip",
     "downloadwindows": "/downloads/crab-windows.zip",
-    "dev": false
+    "dev": false,
+    "wasm": "none"
   },
   {
     "name": "Dodgeball",
@@ -13,7 +14,8 @@
     "githubpath": "none",
     "downloadlinux": "/downloads/dodgeball-linux.zip",
     "downloadwindows": "/downloads/dodgeball-windows.zip",
-    "dev": false
+    "dev": false,
+    "wasm": "none"
   },
   {
     "name": "Hippo",
@@ -21,7 +23,9 @@
     "githubpath": "none",
     "downloadlinux": "/downloads/hippo-linux.zip",
     "downloadwindows": "/downloads/hippo-windows.zip",
-    "dev": false
+    "dev": false,
+    "wasm": "none"
+
   },
   {
     "name": "Watermelon Clicker",
@@ -29,7 +33,9 @@
     "githubpath": "https://github.com/andrewgalvez/watermelon",
     "downloadlinux": "/downloads/watermelon-linux.zip",
     "downloadwindows": "/downloads/watermelon-windows.zip",
-    "dev": false
+    "dev": false,
+    "wasm": "none"
+
   },
   {
     "name": "Crab (2)",
@@ -37,7 +43,9 @@
     "githubpath": "https://github.com/andrewgalvez/crab",
     "downloadlinux": "/downloads/crab2-linux.zip",
     "downloadwindows": "none",
-    "dev": false
+    "dev": false,
+    "wasm": "/wasm/crab2/index.html"
+
   },
   {
     "name": "Space Race",
@@ -45,6 +53,8 @@
     "githubpath": "https://github.com/andrewgalvez/spacerace",
     "downloadlinux": "/downloads/spacerace-linux.zip",
     "downloadwindows": "none",
-    "dev": false
+    "dev": false,
+    "wasm": "none"
+
   }
 ]
