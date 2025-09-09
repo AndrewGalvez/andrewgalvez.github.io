@@ -1,5 +1,6 @@
 html {
   background-color: #191724;
+  scroll-behavior: smooth;
 }
 #header {
   justify-content: center;
@@ -54,6 +55,7 @@ html {
   border-radius: 10%;
   border: 10px solid #f6c177;
   animation: slideInFromTop 3s ease-in-out forwards ,slideInFromTopFinish1 1s ease-in-out forwards 3s, slideInFromTopFinish2 1s ease-in-out forwards 4s;
+  z-index: 99;
 }
 .fg-header {
   font-size: 48px;
@@ -69,7 +71,7 @@ html {
   border: 5px solid black;
   background-color: #26233a;
   border-radius: 25px;
-  transition: transform 1s ease, background-color 1s ease;
+  transition: transform 1s ease, background-color 1s ease, scale 1s ease;
   font-size: 24px;
   margin: 5px;
   display: flex;
@@ -77,6 +79,11 @@ html {
   text-align: center;
   justify-content: flex-start; 
 }
+
+.game-box:hover {
+  scale: 1.1;
+}
+
 .game-box-img { 
   overflow: hidden;
   border: 5px solid #f6c177;
@@ -104,6 +111,7 @@ html {
   color:#31748f;
   margin: 0px;
 }
+
 .game-box-desc > a > button {
   width: 100%;
 }
