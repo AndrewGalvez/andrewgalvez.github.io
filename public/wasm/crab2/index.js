@@ -27,7 +27,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmpb4ntt0k3.js
+// include: /tmp/tmp4j_xdqc_.js
 
   Module['expectedDataFileDownloads'] ??= 0;
   Module['expectedDataFileDownloads']++;
@@ -159,25 +159,25 @@ Module['FS_createPath']("/", "shaders", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/assets/bird.png", "start": 0, "end": 1400}, {"filename": "/assets/boss.mp3", "start": 1400, "end": 4154471}, {"filename": "/assets/click.wav", "start": 4154471, "end": 4156671}, {"filename": "/assets/crab.png", "start": 4156671, "end": 4157605}, {"filename": "/assets/death.wav", "start": 4157605, "end": 4269840}, {"filename": "/assets/enemy.png", "start": 4269840, "end": 4274908}, {"filename": "/assets/explosion.wav", "start": 4274908, "end": 4280157}, {"filename": "/assets/gold_single.png", "start": 4280157, "end": 4280318}, {"filename": "/assets/gold_spawn.wav", "start": 4280318, "end": 4289969}, {"filename": "/assets/hit.wav", "start": 4289969, "end": 4295745}, {"filename": "/assets/ingame.mp3", "start": 4295745, "end": 10021956}, {"filename": "/assets/levelup.wav", "start": 10021956, "end": 10158726}, {"filename": "/assets/menu.mp3", "start": 10158726, "end": 14963517}, {"filename": "/assets/pickupCoin.wav", "start": 14963517, "end": 14987135}, {"filename": "/assets/potion_health.png", "start": 14987135, "end": 14987312}, {"filename": "/assets/potion_health.wav", "start": 14987312, "end": 15007761}, {"filename": "/assets/select.wav", "start": 15007761, "end": 15013933}, {"filename": "/assets/upgrade_icons/FasterProjectile.png", "start": 15013933, "end": 15014123}, {"filename": "/assets/upgrade_icons/GoldMagnet.png", "start": 15014123, "end": 15014299}, {"filename": "/assets/upgrade_icons/GoldMultiplier.png", "start": 15014299, "end": 15014556}, {"filename": "/assets/upgrade_icons/GoldSpawns.png", "start": 15014556, "end": 15014877}, {"filename": "/assets/upgrade_icons/Piercing.png", "start": 15014877, "end": 15015434}, {"filename": "/assets/upgrade_icons/Ricochet.png", "start": 15015434, "end": 15015618}, {"filename": "/data/gamesave", "start": 15015618, "end": 15015754}, {"filename": "/data/map", "start": 15015754, "end": 15016174}, {"filename": "/data/settings", "start": 15016174, "end": 15016177}, {"filename": "/shaders/grain.fs", "start": 15016177, "end": 15017933}, {"filename": "/shaders/grain_webgl.fs", "start": 15017933, "end": 15019717}, {"filename": "/shaders/white_mask.fs", "start": 15019717, "end": 15019953}, {"filename": "/shaders/white_mask_webgl.fs", "start": 15019953, "end": 15020223}], "remote_package_size": 15020223});
+    loadPackage({"files": [{"filename": "/assets/bird.png", "start": 0, "end": 1400}, {"filename": "/assets/boss.mp3", "start": 1400, "end": 4154471}, {"filename": "/assets/click.wav", "start": 4154471, "end": 4156671}, {"filename": "/assets/crab.png", "start": 4156671, "end": 4157605}, {"filename": "/assets/death.wav", "start": 4157605, "end": 4269840}, {"filename": "/assets/enemy.png", "start": 4269840, "end": 4274908}, {"filename": "/assets/explosion.wav", "start": 4274908, "end": 4280157}, {"filename": "/assets/game", "start": 4280157, "end": 4769669}, {"filename": "/assets/gold_single.png", "start": 4769669, "end": 4769830}, {"filename": "/assets/gold_spawn.wav", "start": 4769830, "end": 4779481}, {"filename": "/assets/hit.wav", "start": 4779481, "end": 4785257}, {"filename": "/assets/ingame.mp3", "start": 4785257, "end": 10511468}, {"filename": "/assets/levelup.wav", "start": 10511468, "end": 10648238}, {"filename": "/assets/menu.mp3", "start": 10648238, "end": 15453029}, {"filename": "/assets/pickupCoin.wav", "start": 15453029, "end": 15476647}, {"filename": "/assets/potion_health.png", "start": 15476647, "end": 15476824}, {"filename": "/assets/potion_health.wav", "start": 15476824, "end": 15497273}, {"filename": "/assets/select.wav", "start": 15497273, "end": 15503445}, {"filename": "/assets/upgrade_icons/FasterProjectile.png", "start": 15503445, "end": 15503635}, {"filename": "/assets/upgrade_icons/GoldMagnet.png", "start": 15503635, "end": 15503811}, {"filename": "/assets/upgrade_icons/GoldMultiplier.png", "start": 15503811, "end": 15504068}, {"filename": "/assets/upgrade_icons/GoldSpawns.png", "start": 15504068, "end": 15504389}, {"filename": "/assets/upgrade_icons/Piercing.png", "start": 15504389, "end": 15504946}, {"filename": "/assets/upgrade_icons/Ricochet.png", "start": 15504946, "end": 15505130}, {"filename": "/data/map", "start": 15505130, "end": 15505550}, {"filename": "/data/settings", "start": 15505550, "end": 15505553}, {"filename": "/shaders/grain.fs", "start": 15505553, "end": 15506672}, {"filename": "/shaders/white_mask.fs", "start": 15506672, "end": 15506910}], "remote_package_size": 15506910});
 
   })();
 
-// end include: /tmp/tmpb4ntt0k3.js
-// include: /tmp/tmp9bl25nap.js
+// end include: /tmp/tmp4j_xdqc_.js
+// include: /tmp/tmpom2g21bw.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmp9bl25nap.js
-// include: /tmp/tmpyd2weglx.js
+  // end include: /tmp/tmpom2g21bw.js
+// include: /tmp/tmpmchgk_tt.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmpyd2weglx.js
+  // end include: /tmp/tmpmchgk_tt.js
 
 
 var arguments_ = [];
@@ -11345,60 +11345,59 @@ function checkIncomingModuleAPI() {
   ignoredModuleProp('fetchSettings');
 }
 var ASM_CONSTS = {
-  157296: () => { if (Module['go_to_home']) { Module['go_to_home'](); } },  
- 157354: ($0, $1, $2, $3, $4) => { if (typeof window === 'undefined' || (window.AudioContext || window.webkitAudioContext) === undefined) { return 0; } if (typeof(window.miniaudio) === 'undefined') { window.miniaudio = { referenceCount: 0 }; window.miniaudio.device_type = {}; window.miniaudio.device_type.playback = $0; window.miniaudio.device_type.capture = $1; window.miniaudio.device_type.duplex = $2; window.miniaudio.device_state = {}; window.miniaudio.device_state.stopped = $3; window.miniaudio.device_state.started = $4; let miniaudio = window.miniaudio; miniaudio.devices = []; miniaudio.track_device = function(device) { for (var iDevice = 0; iDevice < miniaudio.devices.length; ++iDevice) { if (miniaudio.devices[iDevice] == null) { miniaudio.devices[iDevice] = device; return iDevice; } } miniaudio.devices.push(device); return miniaudio.devices.length - 1; }; miniaudio.untrack_device_by_index = function(deviceIndex) { miniaudio.devices[deviceIndex] = null; while (miniaudio.devices.length > 0) { if (miniaudio.devices[miniaudio.devices.length-1] == null) { miniaudio.devices.pop(); } else { break; } } }; miniaudio.untrack_device = function(device) { for (var iDevice = 0; iDevice < miniaudio.devices.length; ++iDevice) { if (miniaudio.devices[iDevice] == device) { return miniaudio.untrack_device_by_index(iDevice); } } }; miniaudio.get_device_by_index = function(deviceIndex) { return miniaudio.devices[deviceIndex]; }; miniaudio.unlock_event_types = (function(){ return ['touchend', 'click']; })(); miniaudio.unlock = function() { for(var i = 0; i < miniaudio.devices.length; ++i) { var device = miniaudio.devices[i]; if (device != null && device.webaudio != null && device.state === miniaudio.device_state.started) { device.webaudio.resume().then(() => { _ma_device__on_notification_unlocked(device.pDevice); }, (error) => {console.error("Failed to resume audiocontext", error); }); } } miniaudio.unlock_event_types.map(function(event_type) { document.removeEventListener(event_type, miniaudio.unlock, true); }); }; miniaudio.unlock_event_types.map(function(event_type) { document.addEventListener(event_type, miniaudio.unlock, true); }); } window.miniaudio.referenceCount += 1; return 1; },  
- 159532: () => { if (typeof(window.miniaudio) !== 'undefined') { miniaudio.unlock_event_types.map(function(event_type) { document.removeEventListener(event_type, miniaudio.unlock, true); }); window.miniaudio.referenceCount -= 1; if (window.miniaudio.referenceCount === 0) { delete window.miniaudio; } } },  
- 159822: () => { return (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined); },  
- 159926: () => { try { var temp = new (window.AudioContext || window.webkitAudioContext)(); var sampleRate = temp.sampleRate; temp.close(); return sampleRate; } catch(e) { return 0; } },  
- 160097: ($0, $1, $2, $3, $4, $5) => { var deviceType = $0; var channels = $1; var sampleRate = $2; var bufferSize = $3; var pIntermediaryBuffer = $4; var pDevice = $5; if (typeof(window.miniaudio) === 'undefined') { return -1; } var device = {}; var audioContextOptions = {}; if (deviceType == window.miniaudio.device_type.playback && sampleRate != 0) { audioContextOptions.sampleRate = sampleRate; } device.webaudio = new (window.AudioContext || window.webkitAudioContext)(audioContextOptions); device.webaudio.suspend(); device.state = window.miniaudio.device_state.stopped; var channelCountIn = 0; var channelCountOut = channels; if (deviceType != window.miniaudio.device_type.playback) { channelCountIn = channels; } device.scriptNode = device.webaudio.createScriptProcessor(bufferSize, channelCountIn, channelCountOut); device.scriptNode.onaudioprocess = function(e) { if (device.intermediaryBufferView == null || device.intermediaryBufferView.length == 0) { device.intermediaryBufferView = new Float32Array(HEAPF32.buffer, pIntermediaryBuffer, bufferSize * channels); } if (deviceType == window.miniaudio.device_type.capture || deviceType == window.miniaudio.device_type.duplex) { for (var iChannel = 0; iChannel < channels; iChannel += 1) { var inputBuffer = e.inputBuffer.getChannelData(iChannel); var intermediaryBuffer = device.intermediaryBufferView; for (var iFrame = 0; iFrame < bufferSize; iFrame += 1) { intermediaryBuffer[iFrame*channels + iChannel] = inputBuffer[iFrame]; } } _ma_device_process_pcm_frames_capture__webaudio(pDevice, bufferSize, pIntermediaryBuffer); } if (deviceType == window.miniaudio.device_type.playback || deviceType == window.miniaudio.device_type.duplex) { _ma_device_process_pcm_frames_playback__webaudio(pDevice, bufferSize, pIntermediaryBuffer); for (var iChannel = 0; iChannel < e.outputBuffer.numberOfChannels; ++iChannel) { var outputBuffer = e.outputBuffer.getChannelData(iChannel); var intermediaryBuffer = device.intermediaryBufferView; for (var iFrame = 0; iFrame < bufferSize; iFrame += 1) { outputBuffer[iFrame] = intermediaryBuffer[iFrame*channels + iChannel]; } } } else { for (var iChannel = 0; iChannel < e.outputBuffer.numberOfChannels; ++iChannel) { e.outputBuffer.getChannelData(iChannel).fill(0.0); } } }; if (deviceType == window.miniaudio.device_type.capture || deviceType == window.miniaudio.device_type.duplex) { navigator.mediaDevices.getUserMedia({audio:true, video:false}) .then(function(stream) { device.streamNode = device.webaudio.createMediaStreamSource(stream); device.streamNode.connect(device.scriptNode); device.scriptNode.connect(device.webaudio.destination); }) .catch(function(error) { console.log("Failed to get user media: " + error); }); } if (deviceType == window.miniaudio.device_type.playback) { device.scriptNode.connect(device.webaudio.destination); } device.pDevice = pDevice; return window.miniaudio.track_device(device); },  
- 162974: ($0) => { return window.miniaudio.get_device_by_index($0).webaudio.sampleRate; },  
- 163047: ($0) => { var device = window.miniaudio.get_device_by_index($0); if (device.scriptNode !== undefined) { device.scriptNode.onaudioprocess = function(e) {}; device.scriptNode.disconnect(); device.scriptNode = undefined; } if (device.streamNode !== undefined) { device.streamNode.disconnect(); device.streamNode = undefined; } device.webaudio.close(); device.webaudio = undefined; device.pDevice = undefined; },  
- 163447: ($0) => { window.miniaudio.untrack_device_by_index($0); },  
- 163497: ($0) => { var device = window.miniaudio.get_device_by_index($0); device.webaudio.resume(); device.state = window.miniaudio.device_state.started; },  
- 163636: ($0) => { var device = window.miniaudio.get_device_by_index($0); device.webaudio.suspend(); device.state = window.miniaudio.device_state.stopped; },  
- 163776: () => { if (document.fullscreenElement) return 1; },  
- 163822: () => { return Module.canvas.width; },  
- 163854: () => { return parseInt(Module.canvas.style.width); },  
- 163902: () => { document.exitFullscreen(); },  
- 163929: () => { setTimeout(function() { Module.requestFullscreen(false, false); }, 100); },  
- 164002: () => { if (document.fullscreenElement) return 1; },  
- 164048: () => { return Module.canvas.width; },  
- 164080: () => { return screen.width; },  
- 164105: () => { document.exitFullscreen(); },  
- 164132: () => { setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100); },  
- 164265: () => { return window.innerWidth; },  
- 164291: () => { return window.innerHeight; },  
- 164318: () => { if (document.fullscreenElement) return 1; },  
- 164364: () => { return Module.canvas.width; },  
- 164396: () => { return parseInt(Module.canvas.style.width); },  
- 164444: () => { if (document.fullscreenElement) return 1; },  
- 164490: () => { return Module.canvas.width; },  
- 164522: () => { return screen.width; },  
- 164547: () => { return window.innerWidth; },  
- 164573: () => { return window.innerHeight; },  
- 164600: () => { if (document.fullscreenElement) return 1; },  
- 164646: () => { return Module.canvas.width; },  
- 164678: () => { return screen.width; },  
- 164703: () => { document.exitFullscreen(); },  
- 164730: () => { if (document.fullscreenElement) return 1; },  
- 164776: () => { return Module.canvas.width; },  
- 164808: () => { return parseInt(Module.canvas.style.width); },  
- 164856: () => { document.exitFullscreen(); },  
- 164883: ($0) => { Module.canvas.style.opacity = $0; },  
- 164921: () => { return screen.width; },  
- 164946: () => { return screen.height; },  
- 164972: () => { return window.screenX; },  
- 164999: () => { return window.screenY; },  
- 165026: () => { return window.devicePixelRatio; },  
- 165062: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
- 165115: ($0) => { Module.canvas.style.cursor = UTF8ToString($0); },  
- 165166: () => { Module.canvas.style.cursor = 'none'; },  
- 165203: ($0, $1, $2, $3) => { try { navigator.getGamepads()[$0].vibrationActuator.playEffect('dual-rumble', { startDelay: 0, duration: $3, weakMagnitude: $1, strongMagnitude: $2 }); } catch (e) { try { navigator.getGamepads()[$0].hapticActuators[0].pulse($2, $3); } catch (e) { } } },  
- 165459: ($0) => { Module.canvas.style.cursor = UTF8ToString($0); },  
- 165510: () => { if (document.pointerLockElement) return 1; },  
- 165557: () => { if (document.fullscreenElement) return 1; },  
- 165603: () => { return window.innerWidth; },  
- 165629: () => { return window.innerHeight; }
+  154336: ($0, $1, $2, $3, $4) => { if (typeof window === 'undefined' || (window.AudioContext || window.webkitAudioContext) === undefined) { return 0; } if (typeof(window.miniaudio) === 'undefined') { window.miniaudio = { referenceCount: 0 }; window.miniaudio.device_type = {}; window.miniaudio.device_type.playback = $0; window.miniaudio.device_type.capture = $1; window.miniaudio.device_type.duplex = $2; window.miniaudio.device_state = {}; window.miniaudio.device_state.stopped = $3; window.miniaudio.device_state.started = $4; let miniaudio = window.miniaudio; miniaudio.devices = []; miniaudio.track_device = function(device) { for (var iDevice = 0; iDevice < miniaudio.devices.length; ++iDevice) { if (miniaudio.devices[iDevice] == null) { miniaudio.devices[iDevice] = device; return iDevice; } } miniaudio.devices.push(device); return miniaudio.devices.length - 1; }; miniaudio.untrack_device_by_index = function(deviceIndex) { miniaudio.devices[deviceIndex] = null; while (miniaudio.devices.length > 0) { if (miniaudio.devices[miniaudio.devices.length-1] == null) { miniaudio.devices.pop(); } else { break; } } }; miniaudio.untrack_device = function(device) { for (var iDevice = 0; iDevice < miniaudio.devices.length; ++iDevice) { if (miniaudio.devices[iDevice] == device) { return miniaudio.untrack_device_by_index(iDevice); } } }; miniaudio.get_device_by_index = function(deviceIndex) { return miniaudio.devices[deviceIndex]; }; miniaudio.unlock_event_types = (function(){ return ['touchend', 'click']; })(); miniaudio.unlock = function() { for(var i = 0; i < miniaudio.devices.length; ++i) { var device = miniaudio.devices[i]; if (device != null && device.webaudio != null && device.state === miniaudio.device_state.started) { device.webaudio.resume().then(() => { _ma_device__on_notification_unlocked(device.pDevice); }, (error) => {console.error("Failed to resume audiocontext", error); }); } } miniaudio.unlock_event_types.map(function(event_type) { document.removeEventListener(event_type, miniaudio.unlock, true); }); }; miniaudio.unlock_event_types.map(function(event_type) { document.addEventListener(event_type, miniaudio.unlock, true); }); } window.miniaudio.referenceCount += 1; return 1; },  
+ 156514: () => { if (typeof(window.miniaudio) !== 'undefined') { miniaudio.unlock_event_types.map(function(event_type) { document.removeEventListener(event_type, miniaudio.unlock, true); }); window.miniaudio.referenceCount -= 1; if (window.miniaudio.referenceCount === 0) { delete window.miniaudio; } } },  
+ 156804: () => { return (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined); },  
+ 156908: () => { try { var temp = new (window.AudioContext || window.webkitAudioContext)(); var sampleRate = temp.sampleRate; temp.close(); return sampleRate; } catch(e) { return 0; } },  
+ 157079: ($0, $1, $2, $3, $4, $5) => { var deviceType = $0; var channels = $1; var sampleRate = $2; var bufferSize = $3; var pIntermediaryBuffer = $4; var pDevice = $5; if (typeof(window.miniaudio) === 'undefined') { return -1; } var device = {}; var audioContextOptions = {}; if (deviceType == window.miniaudio.device_type.playback && sampleRate != 0) { audioContextOptions.sampleRate = sampleRate; } device.webaudio = new (window.AudioContext || window.webkitAudioContext)(audioContextOptions); device.webaudio.suspend(); device.state = window.miniaudio.device_state.stopped; var channelCountIn = 0; var channelCountOut = channels; if (deviceType != window.miniaudio.device_type.playback) { channelCountIn = channels; } device.scriptNode = device.webaudio.createScriptProcessor(bufferSize, channelCountIn, channelCountOut); device.scriptNode.onaudioprocess = function(e) { if (device.intermediaryBufferView == null || device.intermediaryBufferView.length == 0) { device.intermediaryBufferView = new Float32Array(HEAPF32.buffer, pIntermediaryBuffer, bufferSize * channels); } if (deviceType == window.miniaudio.device_type.capture || deviceType == window.miniaudio.device_type.duplex) { for (var iChannel = 0; iChannel < channels; iChannel += 1) { var inputBuffer = e.inputBuffer.getChannelData(iChannel); var intermediaryBuffer = device.intermediaryBufferView; for (var iFrame = 0; iFrame < bufferSize; iFrame += 1) { intermediaryBuffer[iFrame*channels + iChannel] = inputBuffer[iFrame]; } } _ma_device_process_pcm_frames_capture__webaudio(pDevice, bufferSize, pIntermediaryBuffer); } if (deviceType == window.miniaudio.device_type.playback || deviceType == window.miniaudio.device_type.duplex) { _ma_device_process_pcm_frames_playback__webaudio(pDevice, bufferSize, pIntermediaryBuffer); for (var iChannel = 0; iChannel < e.outputBuffer.numberOfChannels; ++iChannel) { var outputBuffer = e.outputBuffer.getChannelData(iChannel); var intermediaryBuffer = device.intermediaryBufferView; for (var iFrame = 0; iFrame < bufferSize; iFrame += 1) { outputBuffer[iFrame] = intermediaryBuffer[iFrame*channels + iChannel]; } } } else { for (var iChannel = 0; iChannel < e.outputBuffer.numberOfChannels; ++iChannel) { e.outputBuffer.getChannelData(iChannel).fill(0.0); } } }; if (deviceType == window.miniaudio.device_type.capture || deviceType == window.miniaudio.device_type.duplex) { navigator.mediaDevices.getUserMedia({audio:true, video:false}) .then(function(stream) { device.streamNode = device.webaudio.createMediaStreamSource(stream); device.streamNode.connect(device.scriptNode); device.scriptNode.connect(device.webaudio.destination); }) .catch(function(error) { console.log("Failed to get user media: " + error); }); } if (deviceType == window.miniaudio.device_type.playback) { device.scriptNode.connect(device.webaudio.destination); } device.pDevice = pDevice; return window.miniaudio.track_device(device); },  
+ 159956: ($0) => { return window.miniaudio.get_device_by_index($0).webaudio.sampleRate; },  
+ 160029: ($0) => { var device = window.miniaudio.get_device_by_index($0); if (device.scriptNode !== undefined) { device.scriptNode.onaudioprocess = function(e) {}; device.scriptNode.disconnect(); device.scriptNode = undefined; } if (device.streamNode !== undefined) { device.streamNode.disconnect(); device.streamNode = undefined; } device.webaudio.close(); device.webaudio = undefined; device.pDevice = undefined; },  
+ 160429: ($0) => { window.miniaudio.untrack_device_by_index($0); },  
+ 160479: ($0) => { var device = window.miniaudio.get_device_by_index($0); device.webaudio.resume(); device.state = window.miniaudio.device_state.started; },  
+ 160618: ($0) => { var device = window.miniaudio.get_device_by_index($0); device.webaudio.suspend(); device.state = window.miniaudio.device_state.stopped; },  
+ 160758: () => { if (document.fullscreenElement) return 1; },  
+ 160804: () => { return Module.canvas.width; },  
+ 160836: () => { return parseInt(Module.canvas.style.width); },  
+ 160884: () => { document.exitFullscreen(); },  
+ 160911: () => { setTimeout(function() { Module.requestFullscreen(false, false); }, 100); },  
+ 160984: () => { if (document.fullscreenElement) return 1; },  
+ 161030: () => { return Module.canvas.width; },  
+ 161062: () => { return screen.width; },  
+ 161087: () => { document.exitFullscreen(); },  
+ 161114: () => { setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100); },  
+ 161247: () => { return window.innerWidth; },  
+ 161273: () => { return window.innerHeight; },  
+ 161300: () => { if (document.fullscreenElement) return 1; },  
+ 161346: () => { return Module.canvas.width; },  
+ 161378: () => { return parseInt(Module.canvas.style.width); },  
+ 161426: () => { if (document.fullscreenElement) return 1; },  
+ 161472: () => { return Module.canvas.width; },  
+ 161504: () => { return screen.width; },  
+ 161529: () => { return window.innerWidth; },  
+ 161555: () => { return window.innerHeight; },  
+ 161582: () => { if (document.fullscreenElement) return 1; },  
+ 161628: () => { return Module.canvas.width; },  
+ 161660: () => { return screen.width; },  
+ 161685: () => { document.exitFullscreen(); },  
+ 161712: () => { if (document.fullscreenElement) return 1; },  
+ 161758: () => { return Module.canvas.width; },  
+ 161790: () => { return parseInt(Module.canvas.style.width); },  
+ 161838: () => { document.exitFullscreen(); },  
+ 161865: ($0) => { Module.canvas.style.opacity = $0; },  
+ 161903: () => { return screen.width; },  
+ 161928: () => { return screen.height; },  
+ 161954: () => { return window.screenX; },  
+ 161981: () => { return window.screenY; },  
+ 162008: () => { return window.devicePixelRatio; },  
+ 162044: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
+ 162097: ($0) => { Module.canvas.style.cursor = UTF8ToString($0); },  
+ 162148: () => { Module.canvas.style.cursor = 'none'; },  
+ 162185: ($0, $1, $2, $3) => { try { navigator.getGamepads()[$0].vibrationActuator.playEffect('dual-rumble', { startDelay: 0, duration: $3, weakMagnitude: $1, strongMagnitude: $2 }); } catch (e) { try { navigator.getGamepads()[$0].hapticActuators[0].pulse($2, $3); } catch (e) { } } },  
+ 162441: ($0) => { Module.canvas.style.cursor = UTF8ToString($0); },  
+ 162492: () => { if (document.pointerLockElement) return 1; },  
+ 162539: () => { if (document.fullscreenElement) return 1; },  
+ 162585: () => { return window.innerWidth; },  
+ 162611: () => { return window.innerHeight; }
 };
 function GetCanvasIdJs() { var canvasId = "#" + Module.canvas.id; var lengthBytes = lengthBytesUTF8(canvasId) + 1; var stringOnWasmHeap = _malloc(lengthBytes); stringToUTF8(canvasId, stringOnWasmHeap, lengthBytes); return stringOnWasmHeap; }
 
@@ -11422,12 +11421,11 @@ var __emscripten_stack_alloc = makeInvalidEarlyAccess('__emscripten_stack_alloc'
 var _emscripten_stack_get_current = makeInvalidEarlyAccess('_emscripten_stack_get_current');
 var dynCall_ii = makeInvalidEarlyAccess('dynCall_ii');
 var dynCall_vi = makeInvalidEarlyAccess('dynCall_vi');
-var dynCall_viii = makeInvalidEarlyAccess('dynCall_viii');
-var dynCall_v = makeInvalidEarlyAccess('dynCall_v');
 var dynCall_vii = makeInvalidEarlyAccess('dynCall_vii');
 var dynCall_iii = makeInvalidEarlyAccess('dynCall_iii');
 var dynCall_iiii = makeInvalidEarlyAccess('dynCall_iiii');
 var dynCall_iiiii = makeInvalidEarlyAccess('dynCall_iiiii');
+var dynCall_viii = makeInvalidEarlyAccess('dynCall_viii');
 var dynCall_viiii = makeInvalidEarlyAccess('dynCall_viiii');
 var dynCall_iiiji = makeInvalidEarlyAccess('dynCall_iiiji');
 var dynCall_iiiiiii = makeInvalidEarlyAccess('dynCall_iiiiiii');
@@ -11443,6 +11441,7 @@ var dynCall_viiiiiiii = makeInvalidEarlyAccess('dynCall_viiiiiiii');
 var dynCall_viiiiiiiii = makeInvalidEarlyAccess('dynCall_viiiiiiiii');
 var dynCall_i = makeInvalidEarlyAccess('dynCall_i');
 var dynCall_vff = makeInvalidEarlyAccess('dynCall_vff');
+var dynCall_v = makeInvalidEarlyAccess('dynCall_v');
 var dynCall_viiiiiii = makeInvalidEarlyAccess('dynCall_viiiiiii');
 var dynCall_vfi = makeInvalidEarlyAccess('dynCall_vfi');
 var dynCall_viif = makeInvalidEarlyAccess('dynCall_viif');
@@ -11487,12 +11486,11 @@ function assignWasmExports(wasmExports) {
   _emscripten_stack_get_current = wasmExports['emscripten_stack_get_current'];
   dynCalls['ii'] = dynCall_ii = createExportWrapper('dynCall_ii', 2);
   dynCalls['vi'] = dynCall_vi = createExportWrapper('dynCall_vi', 2);
-  dynCalls['viii'] = dynCall_viii = createExportWrapper('dynCall_viii', 4);
-  dynCalls['v'] = dynCall_v = createExportWrapper('dynCall_v', 1);
   dynCalls['vii'] = dynCall_vii = createExportWrapper('dynCall_vii', 3);
   dynCalls['iii'] = dynCall_iii = createExportWrapper('dynCall_iii', 3);
   dynCalls['iiii'] = dynCall_iiii = createExportWrapper('dynCall_iiii', 4);
   dynCalls['iiiii'] = dynCall_iiiii = createExportWrapper('dynCall_iiiii', 5);
+  dynCalls['viii'] = dynCall_viii = createExportWrapper('dynCall_viii', 4);
   dynCalls['viiii'] = dynCall_viiii = createExportWrapper('dynCall_viiii', 5);
   dynCalls['iiiji'] = dynCall_iiiji = createExportWrapper('dynCall_iiiji', 5);
   dynCalls['iiiiiii'] = dynCall_iiiiiii = createExportWrapper('dynCall_iiiiiii', 7);
@@ -11508,6 +11506,7 @@ function assignWasmExports(wasmExports) {
   dynCalls['viiiiiiiii'] = dynCall_viiiiiiiii = createExportWrapper('dynCall_viiiiiiiii', 10);
   dynCalls['i'] = dynCall_i = createExportWrapper('dynCall_i', 1);
   dynCalls['vff'] = dynCall_vff = createExportWrapper('dynCall_vff', 3);
+  dynCalls['v'] = dynCall_v = createExportWrapper('dynCall_v', 1);
   dynCalls['viiiiiii'] = dynCall_viiiiiii = createExportWrapper('dynCall_viiiiiii', 8);
   dynCalls['vfi'] = dynCall_vfi = createExportWrapper('dynCall_vfi', 3);
   dynCalls['viif'] = dynCall_viif = createExportWrapper('dynCall_viif', 4);
