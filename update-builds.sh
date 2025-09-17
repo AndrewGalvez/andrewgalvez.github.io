@@ -4,6 +4,7 @@
 GAMES_JSON="public/games.json"
 PREV_DIR="prev_releases"
 DOWNLOAD_DIR="public/downloads"
+WASM_DIR="public/wasm"
 DOWNLOADED_ANYTHING=false
 
 # Create necessary directories

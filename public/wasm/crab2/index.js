@@ -27,7 +27,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmpztjik_xb.js
+// include: /tmp/tmp8o0rnxzy.js
 
   Module['expectedDataFileDownloads'] ??= 0;
   Module['expectedDataFileDownloads']++;
@@ -159,25 +159,25 @@ Module['FS_createPath']("/", "shaders", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/assets/bird.png", "start": 0, "end": 1400}, {"filename": "/assets/boss.mp3", "start": 1400, "end": 4154471}, {"filename": "/assets/click.wav", "start": 4154471, "end": 4156671}, {"filename": "/assets/crab.png", "start": 4156671, "end": 4157605}, {"filename": "/assets/death.wav", "start": 4157605, "end": 4269840}, {"filename": "/assets/enemy.png", "start": 4269840, "end": 4274908}, {"filename": "/assets/explosion.wav", "start": 4274908, "end": 4280157}, {"filename": "/assets/gold_single.png", "start": 4280157, "end": 4280318}, {"filename": "/assets/gold_spawn.wav", "start": 4280318, "end": 4289969}, {"filename": "/assets/hit.wav", "start": 4289969, "end": 4295745}, {"filename": "/assets/ingame.mp3", "start": 4295745, "end": 10021956}, {"filename": "/assets/levelup.wav", "start": 10021956, "end": 10158726}, {"filename": "/assets/menu.mp3", "start": 10158726, "end": 14963517}, {"filename": "/assets/pickupCoin.wav", "start": 14963517, "end": 14987135}, {"filename": "/assets/potion_health.png", "start": 14987135, "end": 14987312}, {"filename": "/assets/potion_health.wav", "start": 14987312, "end": 15007761}, {"filename": "/assets/select.wav", "start": 15007761, "end": 15013933}, {"filename": "/assets/tilemap.png", "start": 15013933, "end": 15014402}, {"filename": "/assets/upgrade_icons/FasterProjectile.png", "start": 15014402, "end": 15014592}, {"filename": "/assets/upgrade_icons/GoldMagnet.png", "start": 15014592, "end": 15014768}, {"filename": "/assets/upgrade_icons/GoldMultiplier.png", "start": 15014768, "end": 15015025}, {"filename": "/assets/upgrade_icons/GoldSpawns.png", "start": 15015025, "end": 15015346}, {"filename": "/assets/upgrade_icons/Piercing.png", "start": 15015346, "end": 15015903}, {"filename": "/assets/upgrade_icons/Ricochet.png", "start": 15015903, "end": 15016087}, {"filename": "/data/map", "start": 15016087, "end": 15016507}, {"filename": "/data/maprender", "start": 15016507, "end": 15016927}, {"filename": "/data/settings", "start": 15016927, "end": 15016930}, {"filename": "/shaders/grain.fs", "start": 15016930, "end": 15018112}, {"filename": "/shaders/white_mask.fs", "start": 15018112, "end": 15018391}], "remote_package_size": 15018391});
+    loadPackage({"files": [{"filename": "/assets/bird.png", "start": 0, "end": 1400}, {"filename": "/assets/boss.mp3", "start": 1400, "end": 4154471}, {"filename": "/assets/click.wav", "start": 4154471, "end": 4156671}, {"filename": "/assets/crab.png", "start": 4156671, "end": 4157605}, {"filename": "/assets/death.wav", "start": 4157605, "end": 4269840}, {"filename": "/assets/enemy.png", "start": 4269840, "end": 4274908}, {"filename": "/assets/explosion.wav", "start": 4274908, "end": 4280157}, {"filename": "/assets/gold_single.png", "start": 4280157, "end": 4280318}, {"filename": "/assets/gold_spawn.wav", "start": 4280318, "end": 4289969}, {"filename": "/assets/hit.wav", "start": 4289969, "end": 4295745}, {"filename": "/assets/ingame.mp3", "start": 4295745, "end": 10021956}, {"filename": "/assets/levelup.wav", "start": 10021956, "end": 10158726}, {"filename": "/assets/menu.mp3", "start": 10158726, "end": 14963517}, {"filename": "/assets/pickupCoin.wav", "start": 14963517, "end": 14987135}, {"filename": "/assets/potion_health.png", "start": 14987135, "end": 14987312}, {"filename": "/assets/potion_health.wav", "start": 14987312, "end": 15007761}, {"filename": "/assets/select.wav", "start": 15007761, "end": 15013933}, {"filename": "/assets/tilemap.png", "start": 15013933, "end": 15014402}, {"filename": "/assets/upgrade_icons/FasterProjectile.png", "start": 15014402, "end": 15014592}, {"filename": "/assets/upgrade_icons/GoldMagnet.png", "start": 15014592, "end": 15014768}, {"filename": "/assets/upgrade_icons/GoldMultiplier.png", "start": 15014768, "end": 15015025}, {"filename": "/assets/upgrade_icons/GoldSpawns.png", "start": 15015025, "end": 15015346}, {"filename": "/assets/upgrade_icons/Piercing.png", "start": 15015346, "end": 15015903}, {"filename": "/assets/upgrade_icons/Ricochet.png", "start": 15015903, "end": 15016087}, {"filename": "/data/map", "start": 15016087, "end": 15016507}, {"filename": "/data/maprender", "start": 15016507, "end": 15016927}, {"filename": "/data/settings", "start": 15016927, "end": 15016932}, {"filename": "/shaders/grain.fs", "start": 15016932, "end": 15018114}, {"filename": "/shaders/white_mask.fs", "start": 15018114, "end": 15018393}], "remote_package_size": 15018393});
 
   })();
 
-// end include: /tmp/tmpztjik_xb.js
-// include: /tmp/tmpmn0zz3dx.js
+// end include: /tmp/tmp8o0rnxzy.js
+// include: /tmp/tmpn9dvbfep.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmpmn0zz3dx.js
-// include: /tmp/tmpschlyo3m.js
+  // end include: /tmp/tmpn9dvbfep.js
+// include: /tmp/tmp0pakwuvy.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmpschlyo3m.js
+  // end include: /tmp/tmp0pakwuvy.js
 
 
 var arguments_ = [];
