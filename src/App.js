@@ -46,9 +46,13 @@ function GameBox({ gamedata }) {
 function GameBoxesWrapper({games_data}) {
   return (
     <div className="game-boxes-wrapper">
-      {games_data.map((game, i) => <GameBox gamedata={game}/>)}
+      {games_data.map((game, i) => <GameBox gamedata={game} key={i}/>)}
     </div>);
 };
+
+function SidebarNews({news}) {
+  return (<div className="sidebar-news"><p>{news}</p></div>);
+}
 
 function SidebarSearchPrompt({searchTerm}) {
   return (<input placeholder="Find a game..." value={searchTerm}/>);
@@ -62,10 +66,10 @@ function SidebarItemList({games_data}) {
   );
 }
 
-function Sidebar({data}) {
+function Sidebar({data, news}) {
  return (<div className="sidebar">
    {/* <p><b>Search</b></p> <SidebarSearchPrompt/>  */}
-   <SidebarItemList games_data={data}/> </div>);
+   <SidebarNews news={news}/><SidebarItemList games_data={data}/> </div>);
 }
 
 function Header({setFeedback}) {
@@ -117,10 +121,11 @@ function FeaturedGames({gamesdata}) {
 
 function App() {
   const [games_data, setGamesData] = useState([]);
+  const [news, setNews] = useState("");
   useEffect(() => {
     fetch(process.env.PUBLIC_URL + '/games.json')
       .then(res => res.json())
-      .then(data => setGamesData(data))
+      .then(data => {setGamesData(data.data); setNews(data.news)})
   }, []);
 
   const [isFeedbackDisplayed, setIsFeedbackDisplayed] = useState(false);
@@ -133,7 +138,7 @@ function App() {
     <Header setFeedback={()=>{setIsFeedbackDisplayed(!isFeedbackDisplayed);}}/>
     {isFeedbackDisplayed && <FeedbackPanel runSendFeedback={sendFeedback}/>}
     <div className="mainwrapper">
-    <Sidebar data={games_data}/>
+    <Sidebar data={games_data} news={news}/>
     <div className="gameswrapper">
     <FeaturedGames gamesdata={games_data}/>
     <GameBoxesWrapper className="game-boxes-wrapper" games_data={games_data}/>

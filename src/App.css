@@ -211,3 +211,9 @@ html {
 .feedback-panel-right > h3 {
   margin: 0px;
 }
+
+.sidebar-news {
+  border: 3px solid black;
+  background-color: white;
+  margin: 10px;
+}
