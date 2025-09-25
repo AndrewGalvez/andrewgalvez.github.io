@@ -8,7 +8,7 @@ WASM_DIR="public/wasm"
 DOWNLOADED_ANYTHING=false
 
 # Create necessary directories
-mkdir -p "$PREV_DIR" "$DOWNLOAD_DIR"
+mkdir -p "$PREV_DIR" "$DOWNLOAD_DIR" "$WASM_DIR"
 
 # Function to extract repo name from GitHub URL
 get_repo_from_url() {
@@ -37,10 +37,81 @@ check_dependencies() {
         missing_deps+=("curl")
     fi
     
+    if ! command -v unzip &> /dev/null; then
+        missing_deps+=("unzip")
+    fi
+    
     if [ ${#missing_deps[@]} -gt 0 ]; then
         echo "❌ Missing required dependencies: ${missing_deps[*]}"
         echo "Please install them before running this script."
         exit 1
+    fi
+}
+
+# Function to handle WASM zip extraction
+handle_wasm_zip() {
+    local zip_file="$1"
+    local game_prefix="$2"
+    
+    echo "🎮 Processing WASM zip file: $(basename "$zip_file")"
+    
+    # First, let's see what's in the zip
+    echo "🔍 Inspecting zip contents..."
+    local zip_contents=$(unzip -l "$zip_file" 2>/dev/null)
+    if [ $? -ne 0 ]; then
+        echo "❌ Failed to inspect zip file"
+        return 1
+    fi
+    
+    # Show top-level structure
+    echo "📁 Zip structure:"
+    echo "$zip_contents" | grep -E "^\s*[0-9]+" | head -10 | awk '{print "   " $4}'
+    
+    # Remove any existing extracted folders for this game in wasm directory
+    # Look for folders that might have been extracted previously
+    local existing_folders=$(find "$WASM_DIR" -maxdepth 1 -type d -name "*" | grep -v "^$WASM_DIR$")
+    if [ -n "$existing_folders" ]; then
+        echo "🧹 Checking for existing WASM folders to clean up..."
+        # Remove folders that contain files from this game (based on zip contents)
+        local first_folder=$(echo "$zip_contents" | grep -E "^\s*[0-9]+" | head -1 | awk '{print $4}' | cut -d'/' -f1)
+        if [ -n "$first_folder" ] && [ -d "$WASM_DIR/$first_folder" ]; then
+            echo "🗑️  Removing old version: $WASM_DIR/$first_folder"
+            rm -rf "$WASM_DIR/$first_folder"
+        fi
+    fi
+    
+    # Extract zip contents directly to WASM directory (preserving internal folder structure)
+    echo "📦 Extracting WASM files to: $WASM_DIR"
+    if unzip -q "$zip_file" -d "$WASM_DIR"; then
+        echo "✅ Successfully extracted WASM files"
+        
+        # Find what was actually extracted
+        local extracted_folders=$(find "$WASM_DIR" -maxdepth 1 -type d -name "*" | grep -v "^$WASM_DIR$")
+        if [ -n "$extracted_folders" ]; then
+            echo "📁 Extracted folders:"
+            echo "$extracted_folders" | sed 's/^/   /'
+            
+            # Count files in all extracted folders
+            local wasm_count=$(find "$WASM_DIR" -name "*.wasm" | wc -l)
+            local js_count=$(find "$WASM_DIR" -name "*.js" | wc -l)
+            local data_count=$(find "$WASM_DIR" -name "*.data" | wc -l)
+            local html_count=$(find "$WASM_DIR" -name "*.html" | wc -l)
+            
+            echo "   📊 Total files found: ${wasm_count} .wasm, ${js_count} .js, ${data_count} .data, ${html_count} .html"
+            
+            # Show some example files
+            echo "📄 Sample extracted files:"
+            find "$WASM_DIR" -type f | head -5 | sed 's/^/   /'
+        else
+            echo "⚠️  No folders extracted, files may be at root level"
+            # List files directly in WASM_DIR
+            find "$WASM_DIR" -maxdepth 1 -type f | head -5 | sed 's/^/   /'
+        fi
+        
+        return 0
+    else
+        echo "❌ Failed to extract WASM zip file"
+        return 1
     fi
 }
 
@@ -57,6 +128,7 @@ echo "🚀 Starting game release checker..."
 echo "Games file: $GAMES_JSON"
 echo "Previous releases: $PREV_DIR"
 echo "Download directory: $DOWNLOAD_DIR"
+echo "WASM directory: $WASM_DIR"
 echo ""
 
 # Process each game in games.json
@@ -145,6 +217,16 @@ while IFS='|' read -r game_name github_url; do
                 # Verify file was actually downloaded and has content
                 if [ -f "$target_path" ] && [ -s "$target_path" ]; then
                     echo "   File size: $(du -h "$target_path" | cut -f1)"
+                    
+                    # Special handling for wasm.zip files
+                    if [[ "$original_name" == "wasm.zip" ]]; then
+                        echo "🎯 Detected WASM zip file"
+                        if handle_wasm_zip "$target_path" "$GAME_PREFIX"; then
+                            echo "✅ WASM files processed successfully"
+                        else
+                            echo "❌ Failed to process WASM files"
+                        fi
+                    fi
                 else
                     echo "❌ Downloaded file is empty or missing"
                 fi
