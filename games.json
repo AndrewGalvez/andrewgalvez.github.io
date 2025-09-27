@@ -1,4 +1,6 @@
-[
+{
+"news": "Sep 24. News: Crab (2) is now easier!",
+"data": [
   { 
     "name": "Crab (1)",
     "imgpath": "/images/crab.png",
@@ -58,3 +60,4 @@
 
   }
 ]
+}
