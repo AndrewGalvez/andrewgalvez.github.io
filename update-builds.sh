@@ -247,7 +247,7 @@ while IFS='|' read -r game_name github_url; do
     fi
     
     echo ""
-done < <(jq -r '.[] | select(.githubpath != "none" and .githubpath != null) | "\(.name)|\(.githubpath)"' "$GAMES_JSON")
+done < <(jq -r '.data[] | select(.githubpath != "none" and .githubpath != null) | "\(.name)|\(.githubpath)"' "$GAMES_JSON")
 
 echo "🏁 Finished checking all games!"
 echo ""

@@ -1,5 +1,5 @@
 {
-"news": "Sep 24. News: Crab (2) is now easier!",
+"news": "Sep 24. News: Spacerace now playable in browser!",
 "data": [
   { 
     "name": "Crab (1)",
@@ -56,8 +56,7 @@
     "downloadlinux": "/downloads/spacerace-linux.zip",
     "downloadwindows": "none",
     "dev": false,
-    "wasm": "none"
-
+    "wasm": "/wasm/spacerace/index.html"
   }
 ]
 }
