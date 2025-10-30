@@ -90,15 +90,20 @@ html {
   background-color: black;
   width: 100px;
   height: 100px;
+  line-height: 100px;
   border-radius: 50%;
   transition: border-radius 0.4s ease;
   align-self: center;
+  text-align: center;
 }
 .game-box-img:hover {
   border-radius: 0%;
 }
 .game-box-img > img {
-  scale: 0.8;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  vertical-align: middle;
 }
 .game-box-desc {
   margin-top: auto;
@@ -112,18 +117,14 @@ html {
   margin: 0px;
 }
 
+.game-box-desc > .game-box-desc-dev {
+  color: red;
+}
+
 .game-box-desc > a > button {
   width: 100%;
 }
 
-.game-box-desc > .game-box-desc-dev {
-  font-size: 24px;
-  color: red;
-  transform:translateY(400%);
-  background-color: black;
-  border-radius: 100%;
-  align-items: center;
-}
 .mainwrapper {
   display: flex;
 }

@@ -66,6 +66,15 @@
     "downloadwindows": "none",
     "dev": false,
     "wasm": "/wasm/stock_mkt/index.html"
+  },
+  {
+    "name": "Brawler",
+    "imgpath": "/images/brawler.png",
+    "githubpath": "https://github.com/andrewgalvez/brawler",
+    "downloadlinux": "none",
+    "downloadwindows" : "none",
+    "dev": true,
+    "wasm": "none"
   }
 ]
 }
