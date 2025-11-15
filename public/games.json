@@ -75,6 +75,14 @@
     "downloadwindows" : "none",
     "dev": true,
     "wasm": "none"
+  },
+  { "name": "Flappy Bird",
+    "imgpath": "/images/flappy.png",
+    "githubpath": "https://github.com/andrewgalvez/flappy-bird",
+    "downloadlinux": "/downloads/flappy-linux.zip",
+    "downloadwindows": "none",
+    "dev": true,
+    "wasm": "/wasm/flappy/index.html"
   }
 ]
 }
