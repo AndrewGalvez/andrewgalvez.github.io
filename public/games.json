@@ -1,5 +1,5 @@
 {
-"news": "Nov. 02: Crab menu update fr fr",
+"news": "Nov. 14: Flappy bird out!",
 "data": [
   { 
     "name": "Crab (1)",
@@ -81,7 +81,7 @@
     "githubpath": "https://github.com/andrewgalvez/flappy-bird",
     "downloadlinux": "/downloads/flappy-linux.zip",
     "downloadwindows": "none",
-    "dev": true,
+    "dev": false,
     "wasm": "/wasm/flappy/index.html"
   }
 ]
