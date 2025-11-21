@@ -67,15 +67,6 @@
     "dev": false,
     "wasm": "/wasm/stock_mkt/index.html"
   },
-  {
-    "name": "Brawler",
-    "imgpath": "/images/brawler.png",
-    "githubpath": "https://github.com/andrewgalvez/brawler",
-    "downloadlinux": "none",
-    "downloadwindows" : "none",
-    "dev": true,
-    "wasm": "none"
-  },
   { "name": "Flappy Bird",
     "imgpath": "/images/flappy.png",
     "githubpath": "https://github.com/andrewgalvez/flappy-bird",
