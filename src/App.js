@@ -135,6 +135,7 @@ function App() {
   };
 
   return (<>
+    <link rel="icon" href="favicon.ico"/>
     <Header setFeedback={()=>{setIsFeedbackDisplayed(!isFeedbackDisplayed);}}/>
     {isFeedbackDisplayed && <FeedbackPanel runSendFeedback={sendFeedback}/>}
     <div className="mainwrapper">

@@ -1,5 +1,5 @@
 {
-"news": "Nov. 14: Flappy bird out!",
+"news": "Nov. 21: Flappy bird harder now (again)!",
 "data": [
   { 
     "name": "Crab (1)",
@@ -66,15 +66,6 @@
     "downloadwindows": "none",
     "dev": false,
     "wasm": "/wasm/stock_mkt/index.html"
-  },
-  {
-    "name": "Brawler",
-    "imgpath": "/images/brawler.png",
-    "githubpath": "https://github.com/andrewgalvez/brawler",
-    "downloadlinux": "none",
-    "downloadwindows" : "none",
-    "dev": true,
-    "wasm": "none"
   },
   { "name": "Flappy Bird",
     "imgpath": "/images/flappy.png",
