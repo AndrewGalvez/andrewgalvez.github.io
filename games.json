@@ -1,5 +1,5 @@
 {
-"news": "Nov. 21: Flappy bird harder now (again)!",
+"news": "Dec. 29: Pop The Lock out!",
 "data": [
   { 
     "name": "Crab (1)",
@@ -74,6 +74,15 @@
     "downloadwindows": "none",
     "dev": false,
     "wasm": "/wasm/flappy/index.html"
+  },
+  {
+    "name": "Pop the Lock",
+    "imgpath": "/images/pop-the-lock.png",
+    "githubpath": "https://github.com/andrewgalvez/pop-the-lock",
+    "downloadlinux": "/downloads/pop-the-lock-linux.zip",
+    "downloadwindows": "none",
+    "dev": false,
+    "wasm": "/wasm/pop-the-lock/index.html"
   }
 ]
 }
